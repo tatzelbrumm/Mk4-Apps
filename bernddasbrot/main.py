@@ -6,7 +6,7 @@ Shows the EMF homescreen and a picture loaded on the badge alternately.
 ___title___ = "Bernd das Brot Image Home"
 ___license___ = "MIT"
 ___categories___ = ["Homescreens"]
-___dependencies___ = ["homescreen", "shared/logo.png", "shared/sponsors.png"]
+___dependencies___ = ["homescreen", "shared/logo.png"]
 
 import ugfx
 from homescreen import *
@@ -85,15 +85,15 @@ def drawEMFscreen():
 def drawCustomImage():
     ugfx.clear()
     ugfx.orientation(90)
-    ugfx.display_image(0, 0, 'bernd/BerndDasBrot.png')
+    ugfx.display_image(0, 0, 'bernddasbrot/BerndDasBrot.png')
 
 def drawHelpText():
     ugfx.clear()
-    ugfx. Label(0, 110, ugfx.width(), 100, "Copy an image named\nBerndDasBrot.png with a\n240x320 resolution to the\nbernd directory\nand it will appear!")
+    ugfx. Label(0, 110, ugfx.width(), 100, "Copy an image named\nBerndDasBrot.png with a\n240x320 resolution to the\nbernddasbrot directory\nand it will appear!")
 
 
 try:
-    f = open('bernd/BerndDasBrot.png')
+    f = open('bernddasbrot/BerndDasBrot.png')
     customImage = True
     f.close()
 except OSError:
