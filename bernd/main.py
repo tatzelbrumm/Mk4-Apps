@@ -93,15 +93,15 @@ def drawEMFscreen():
 def drawCustomImage():
     ugfx.clear()
     ugfx.orientation(90)
-    ugfx.display_image(0, 0, 'custom_image_home/BerndDasBrot.png')
+    ugfx.display_image(0, 0, 'bernd/BerndDasBrot.png')
 
 def drawHelpText():
     ugfx.clear()
-    ugfx. Label(0, 110, ugfx.width(), 100, "Copy an image named\ncustom_image_home/BerndDasBrot.png with a\n240x320 resolution to the\nbadge root directory\nand it will appear!")
+    ugfx. Label(0, 110, ugfx.width(), 100, "Copy an image named\nBerndDasBrot.png with a\n240x320 resolution to the\nbernd directory\nand it will appear!")
 
 
 try:
-    f = open('custom_image_home/BerndDasBrot.png')
+    f = open('bernd/BerndDasBrot.png')
     customImage = True
     f.close()
 except OSError:
