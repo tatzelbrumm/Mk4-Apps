@@ -37,12 +37,8 @@ def drawEMFscreen():
     style.set_background(ugfx.html_color(0x800080))
     ugfx.set_default_style(style)
 
-    # Logo stuff
-    ugfx.display_image(
-        int((ugfx.width() - logo_width) / 2),
-        int((ugfx.height() - logo_height) / 2),
-        logo_path
-    )
+    # Bernd das Brot stuff
+    ugfx.display_image(0, 0, 'bernddasbrot/BerndDasBrot.png')
 
     # Draw for people to see
     ugfx.orientation(90)
