@@ -101,6 +101,11 @@ except OSError:
 
 # update loop
 while True:
+    drawEMFscreen()
+    wait = 20
+    while wait:
+        wait -= 1
+        sleep_or_exit(0.5)
     if customImage:
         drawCustomImage()
     else:
