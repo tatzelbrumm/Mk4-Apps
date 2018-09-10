@@ -3,7 +3,7 @@ Clone of the default homescreen for the Tilda Mk4.
 Shows the EMF homescreen and a picture loaded on the badge alternately.
 """
 
-___title___ = "Custom Image Home"
+___title___ = "Bernd das Brot Image Home"
 ___license___ = "MIT"
 ___categories___ = ["Homescreens"]
 ___dependencies___ = ["homescreen", "shared/logo.png", "shared/sponsors.png"]
