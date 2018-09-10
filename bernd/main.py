@@ -13,14 +13,6 @@ from homescreen import *
 import time
 import os
 
-# We ❤️ our sponsors
-ugfx.display_image(0, 0, "shared/sponsors.png")
-wait = 5
-while wait:
-    wait -= 1
-    sleep_or_exit(0.5)
-
-
 def drawEMFscreen():
     # Padding for name
     intro_height = 30
@@ -109,11 +101,6 @@ except OSError:
 
 # update loop
 while True:
-    drawEMFscreen()
-    wait = 20
-    while wait:
-        wait -= 1
-        sleep_or_exit(0.5)
     if customImage:
         drawCustomImage()
     else:
